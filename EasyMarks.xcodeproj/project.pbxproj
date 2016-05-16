@@ -1,0 +1,766 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3B21EEDD3D257AFEDBAD9F57 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E48B2882EA0097793FE3EB6 /* Pods.framework */; };
+		A50F2FA81CE9A1E100628BEB /* TableEmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50F2FA71CE9A1E100628BEB /* TableEmptyView.swift */; };
+		A50F2FAA1CE9C2D400628BEB /* PayPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50F2FA91CE9C2D400628BEB /* PayPassword.swift */; };
+		A50F2FAC1CE9C30D00628BEB /* GridInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50F2FAB1CE9C30D00628BEB /* GridInputView.swift */; };
+		A50F2FAE1CE9C3B700628BEB /* GridKeyBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50F2FAD1CE9C3B700628BEB /* GridKeyBoard.swift */; };
+		A54267F61CE184B600B717B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54267F51CE184B600B717B3 /* AppDelegate.swift */; };
+		A54267F81CE184B600B717B3 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54267F71CE184B600B717B3 /* MainViewController.swift */; };
+		A54267FB1CE184B600B717B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A54267F91CE184B600B717B3 /* Main.storyboard */; };
+		A54267FE1CE184B600B717B3 /* EasyMarks.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A54267FC1CE184B600B717B3 /* EasyMarks.xcdatamodeld */; };
+		A54268001CE184B600B717B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A54267FF1CE184B600B717B3 /* Assets.xcassets */; };
+		A54268031CE184B600B717B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A54268011CE184B600B717B3 /* LaunchScreen.storyboard */; };
+		A542680E1CE184B600B717B3 /* EasyMarksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A542680D1CE184B600B717B3 /* EasyMarksTests.swift */; };
+		A54268191CE184B600B717B3 /* EasyMarksUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54268181CE184B600B717B3 /* EasyMarksUITests.swift */; };
+		A54268271CE184EA00B717B3 /* CommenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54268261CE184EA00B717B3 /* CommenViewController.swift */; };
+		A54268291CE186A800B717B3 /* MainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54268281CE186A800B717B3 /* MainCollectionViewCell.swift */; };
+		A542682B1CE18C9300B717B3 /* MainCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A542682A1CE18C9300B717B3 /* MainCollectionViewCell.xib */; };
+		A542682E1CE18DB100B717B3 /* MainCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A542682D1CE18DB100B717B3 /* MainCellModel.swift */; };
+		A54596891CE2CE2A00F4C245 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54596881CE2CE2A00F4C245 /* Theme.swift */; };
+		A545968B1CE2D0D500F4C245 /* ColorUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A545968A1CE2D0D500F4C245 /* ColorUtils.swift */; };
+		A545968E1CE2D41900F4C245 /* HomeCollectionFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A545968D1CE2D41900F4C245 /* HomeCollectionFooterView.swift */; };
+		A54596911CE304F400F4C245 /* MoneyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A545968F1CE304F400F4C245 /* MoneyViewController.swift */; };
+		A54596921CE304F400F4C245 /* MoneyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A54596901CE304F400F4C245 /* MoneyViewController.xib */; };
+		A545969D1CE3087600F4C245 /* MoneyEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A545969B1CE3087600F4C245 /* MoneyEntity+CoreDataProperties.swift */; };
+		A545969E1CE3087600F4C245 /* MoneyEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A545969C1CE3087600F4C245 /* MoneyEntity.swift */; };
+		A54596A01CE30B1C00F4C245 /* DbManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A545969F1CE30B1C00F4C245 /* DbManager.swift */; };
+		A54596A31CE3163500F4C245 /* SwiftUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54596A21CE3163500F4C245 /* SwiftUtils.swift */; };
+		A54596A61CE326A400F4C245 /* MoneyTableViewHead.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54596A41CE326A400F4C245 /* MoneyTableViewHead.swift */; };
+		A54596A91CE32DD500F4C245 /* MoneyDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54596A81CE32DD500F4C245 /* MoneyDetail.swift */; };
+		A54596AB1CE330AA00F4C245 /* MoneyDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54596AA1CE330AA00F4C245 /* MoneyDetailCell.swift */; };
+		A545AB821CE97331005948EF /* SwiftToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = A545AB811CE97331005948EF /* SwiftToast.swift */; };
+		A55E8C351CE48A17000D4BDD /* PlaceholderTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55E8C341CE48A17000D4BDD /* PlaceholderTextView.swift */; };
+		A57D73441CE459E0005CD908 /* UIBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57D73431CE459E0005CD908 /* UIBarButton.swift */; };
+		A57D73471CE461E7005CD908 /* MoneyAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57D73451CE461E7005CD908 /* MoneyAddViewController.swift */; };
+		A57D73481CE461E7005CD908 /* MoneyAddViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A57D73461CE461E7005CD908 /* MoneyAddViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A542680A1CE184B600B717B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A54267EA1CE184B600B717B3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A54267F11CE184B600B717B3;
+			remoteInfo = EasyMarks;
+		};
+		A54268151CE184B600B717B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A54267EA1CE184B600B717B3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A54267F11CE184B600B717B3;
+			remoteInfo = EasyMarks;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		67889A14C5D3BFA1ECF4F19B /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		7E48B2882EA0097793FE3EB6 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A50F2FA71CE9A1E100628BEB /* TableEmptyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableEmptyView.swift; sourceTree = "<group>"; };
+		A50F2FA91CE9C2D400628BEB /* PayPassword.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PayPassword.swift; sourceTree = "<group>"; };
+		A50F2FAB1CE9C30D00628BEB /* GridInputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridInputView.swift; sourceTree = "<group>"; };
+		A50F2FAD1CE9C3B700628BEB /* GridKeyBoard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridKeyBoard.swift; sourceTree = "<group>"; };
+		A54267F21CE184B600B717B3 /* EasyMarks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyMarks.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A54267F51CE184B600B717B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A54267F71CE184B600B717B3 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		A54267FA1CE184B600B717B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A54267FD1CE184B600B717B3 /* EasyMarks.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EasyMarks.xcdatamodel; sourceTree = "<group>"; };
+		A54267FF1CE184B600B717B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A54268021CE184B600B717B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A54268041CE184B600B717B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A54268091CE184B600B717B3 /* EasyMarksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasyMarksTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A542680D1CE184B600B717B3 /* EasyMarksTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyMarksTests.swift; sourceTree = "<group>"; };
+		A542680F1CE184B600B717B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A54268141CE184B600B717B3 /* EasyMarksUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasyMarksUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A54268181CE184B600B717B3 /* EasyMarksUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyMarksUITests.swift; sourceTree = "<group>"; };
+		A542681A1CE184B600B717B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A54268261CE184EA00B717B3 /* CommenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommenViewController.swift; sourceTree = "<group>"; };
+		A54268281CE186A800B717B3 /* MainCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCollectionViewCell.swift; sourceTree = "<group>"; };
+		A542682A1CE18C9300B717B3 /* MainCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainCollectionViewCell.xib; sourceTree = "<group>"; };
+		A542682D1CE18DB100B717B3 /* MainCellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCellModel.swift; sourceTree = "<group>"; };
+		A54596881CE2CE2A00F4C245 /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		A545968A1CE2D0D500F4C245 /* ColorUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorUtils.swift; sourceTree = "<group>"; };
+		A545968D1CE2D41900F4C245 /* HomeCollectionFooterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCollectionFooterView.swift; sourceTree = "<group>"; };
+		A545968F1CE304F400F4C245 /* MoneyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoneyViewController.swift; sourceTree = "<group>"; };
+		A54596901CE304F400F4C245 /* MoneyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MoneyViewController.xib; sourceTree = "<group>"; };
+		A545969B1CE3087600F4C245 /* MoneyEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MoneyEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		A545969C1CE3087600F4C245 /* MoneyEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoneyEntity.swift; sourceTree = "<group>"; };
+		A545969F1CE30B1C00F4C245 /* DbManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DbManager.swift; sourceTree = "<group>"; };
+		A54596A21CE3163500F4C245 /* SwiftUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftUtils.swift; sourceTree = "<group>"; };
+		A54596A41CE326A400F4C245 /* MoneyTableViewHead.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoneyTableViewHead.swift; sourceTree = "<group>"; };
+		A54596A81CE32DD500F4C245 /* MoneyDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoneyDetail.swift; sourceTree = "<group>"; };
+		A54596AA1CE330AA00F4C245 /* MoneyDetailCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoneyDetailCell.swift; sourceTree = "<group>"; };
+		A545AB811CE97331005948EF /* SwiftToast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftToast.swift; sourceTree = "<group>"; };
+		A55E8C341CE48A17000D4BDD /* PlaceholderTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceholderTextView.swift; sourceTree = "<group>"; };
+		A57D73431CE459E0005CD908 /* UIBarButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIBarButton.swift; sourceTree = "<group>"; };
+		A57D73451CE461E7005CD908 /* MoneyAddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoneyAddViewController.swift; sourceTree = "<group>"; };
+		A57D73461CE461E7005CD908 /* MoneyAddViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MoneyAddViewController.xib; sourceTree = "<group>"; };
+		BC85BAA35F3DF74F1DF82B1F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A54267EF1CE184B600B717B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B21EEDD3D257AFEDBAD9F57 /* Pods.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A54268061CE184B600B717B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A54268111CE184B600B717B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		540C7285DC66792975EE172E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7E48B2882EA0097793FE3EB6 /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7AACE23760E78D4BC57D5BA8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				67889A14C5D3BFA1ECF4F19B /* Pods.debug.xcconfig */,
+				BC85BAA35F3DF74F1DF82B1F /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A50F2FAF1CE9CCAA00628BEB /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				A54267FF1CE184B600B717B3 /* Assets.xcassets */,
+				A54268011CE184B600B717B3 /* LaunchScreen.storyboard */,
+				A54267FC1CE184B600B717B3 /* EasyMarks.xcdatamodeld */,
+				A54268041CE184B600B717B3 /* Info.plist */,
+			);
+			name = "New Group";
+			sourceTree = "<group>";
+		};
+		A54267E91CE184B600B717B3 = {
+			isa = PBXGroup;
+			children = (
+				A54267F41CE184B600B717B3 /* EasyMarks */,
+				A542680C1CE184B600B717B3 /* EasyMarksTests */,
+				A54268171CE184B600B717B3 /* EasyMarksUITests */,
+				A54267F31CE184B600B717B3 /* Products */,
+				7AACE23760E78D4BC57D5BA8 /* Pods */,
+				540C7285DC66792975EE172E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A54267F31CE184B600B717B3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A54267F21CE184B600B717B3 /* EasyMarks.app */,
+				A54268091CE184B600B717B3 /* EasyMarksTests.xctest */,
+				A54268141CE184B600B717B3 /* EasyMarksUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A54267F41CE184B600B717B3 /* EasyMarks */ = {
+			isa = PBXGroup;
+			children = (
+				A54267F51CE184B600B717B3 /* AppDelegate.swift */,
+				A54268261CE184EA00B717B3 /* CommenViewController.swift */,
+				A54267F71CE184B600B717B3 /* MainViewController.swift */,
+				A54267F91CE184B600B717B3 /* Main.storyboard */,
+				A545968F1CE304F400F4C245 /* MoneyViewController.swift */,
+				A54596901CE304F400F4C245 /* MoneyViewController.xib */,
+				A57D73451CE461E7005CD908 /* MoneyAddViewController.swift */,
+				A57D73461CE461E7005CD908 /* MoneyAddViewController.xib */,
+				A545968C1CE2D40300F4C245 /* cell */,
+				A542682C1CE18D9C00B717B3 /* model */,
+				A54596931CE3081800F4C245 /* Entity */,
+				A55E8C331CE489E1000D4BDD /* view */,
+				A54596A11CE3161E00F4C245 /* utils */,
+				A50F2FAF1CE9CCAA00628BEB /* New Group */,
+			);
+			path = EasyMarks;
+			sourceTree = "<group>";
+		};
+		A542680C1CE184B600B717B3 /* EasyMarksTests */ = {
+			isa = PBXGroup;
+			children = (
+				A542680D1CE184B600B717B3 /* EasyMarksTests.swift */,
+				A542680F1CE184B600B717B3 /* Info.plist */,
+			);
+			path = EasyMarksTests;
+			sourceTree = "<group>";
+		};
+		A54268171CE184B600B717B3 /* EasyMarksUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A54268181CE184B600B717B3 /* EasyMarksUITests.swift */,
+				A542681A1CE184B600B717B3 /* Info.plist */,
+			);
+			path = EasyMarksUITests;
+			sourceTree = "<group>";
+		};
+		A542682C1CE18D9C00B717B3 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				A542682D1CE18DB100B717B3 /* MainCellModel.swift */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		A545968C1CE2D40300F4C245 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				A54268281CE186A800B717B3 /* MainCollectionViewCell.swift */,
+				A542682A1CE18C9300B717B3 /* MainCollectionViewCell.xib */,
+				A545968D1CE2D41900F4C245 /* HomeCollectionFooterView.swift */,
+				A54596A41CE326A400F4C245 /* MoneyTableViewHead.swift */,
+				A54596A81CE32DD500F4C245 /* MoneyDetail.swift */,
+				A54596AA1CE330AA00F4C245 /* MoneyDetailCell.swift */,
+			);
+			name = cell;
+			sourceTree = "<group>";
+		};
+		A54596931CE3081800F4C245 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				A545969B1CE3087600F4C245 /* MoneyEntity+CoreDataProperties.swift */,
+				A545969C1CE3087600F4C245 /* MoneyEntity.swift */,
+			);
+			name = Entity;
+			sourceTree = "<group>";
+		};
+		A54596A11CE3161E00F4C245 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				A545969F1CE30B1C00F4C245 /* DbManager.swift */,
+				A54596881CE2CE2A00F4C245 /* Theme.swift */,
+				A545968A1CE2D0D500F4C245 /* ColorUtils.swift */,
+				A54596A21CE3163500F4C245 /* SwiftUtils.swift */,
+				A57D73431CE459E0005CD908 /* UIBarButton.swift */,
+				A545AB811CE97331005948EF /* SwiftToast.swift */,
+			);
+			name = utils;
+			sourceTree = "<group>";
+		};
+		A55E8C331CE489E1000D4BDD /* view */ = {
+			isa = PBXGroup;
+			children = (
+				A55E8C341CE48A17000D4BDD /* PlaceholderTextView.swift */,
+				A50F2FA71CE9A1E100628BEB /* TableEmptyView.swift */,
+				A50F2FA91CE9C2D400628BEB /* PayPassword.swift */,
+				A50F2FAB1CE9C30D00628BEB /* GridInputView.swift */,
+				A50F2FAD1CE9C3B700628BEB /* GridKeyBoard.swift */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A54267F11CE184B600B717B3 /* EasyMarks */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A542681D1CE184B600B717B3 /* Build configuration list for PBXNativeTarget "EasyMarks" */;
+			buildPhases = (
+				24F82FEA4E8C4EA2BFC537A1 /* Check Pods Manifest.lock */,
+				A54267EE1CE184B600B717B3 /* Sources */,
+				A54267EF1CE184B600B717B3 /* Frameworks */,
+				A54267F01CE184B600B717B3 /* Resources */,
+				B351DD7FAF1CF5E7CC6EEE56 /* Embed Pods Frameworks */,
+				8E3623749AD6BA1CD4AE5C27 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EasyMarks;
+			productName = EasyMarks;
+			productReference = A54267F21CE184B600B717B3 /* EasyMarks.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A54268081CE184B600B717B3 /* EasyMarksTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A54268201CE184B600B717B3 /* Build configuration list for PBXNativeTarget "EasyMarksTests" */;
+			buildPhases = (
+				A54268051CE184B600B717B3 /* Sources */,
+				A54268061CE184B600B717B3 /* Frameworks */,
+				A54268071CE184B600B717B3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A542680B1CE184B600B717B3 /* PBXTargetDependency */,
+			);
+			name = EasyMarksTests;
+			productName = EasyMarksTests;
+			productReference = A54268091CE184B600B717B3 /* EasyMarksTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A54268131CE184B600B717B3 /* EasyMarksUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A54268231CE184B600B717B3 /* Build configuration list for PBXNativeTarget "EasyMarksUITests" */;
+			buildPhases = (
+				A54268101CE184B600B717B3 /* Sources */,
+				A54268111CE184B600B717B3 /* Frameworks */,
+				A54268121CE184B600B717B3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A54268161CE184B600B717B3 /* PBXTargetDependency */,
+			);
+			name = EasyMarksUITests;
+			productName = EasyMarksUITests;
+			productReference = A54268141CE184B600B717B3 /* EasyMarksUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A54267EA1CE184B600B717B3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = wwh;
+				TargetAttributes = {
+					A54267F11CE184B600B717B3 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = NMY97Y2S86;
+					};
+					A54268081CE184B600B717B3 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = A54267F11CE184B600B717B3;
+					};
+					A54268131CE184B600B717B3 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = A54267F11CE184B600B717B3;
+					};
+				};
+			};
+			buildConfigurationList = A54267ED1CE184B600B717B3 /* Build configuration list for PBXProject "EasyMarks" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A54267E91CE184B600B717B3;
+			productRefGroup = A54267F31CE184B600B717B3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A54267F11CE184B600B717B3 /* EasyMarks */,
+				A54268081CE184B600B717B3 /* EasyMarksTests */,
+				A54268131CE184B600B717B3 /* EasyMarksUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A54267F01CE184B600B717B3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A54268031CE184B600B717B3 /* LaunchScreen.storyboard in Resources */,
+				A54268001CE184B600B717B3 /* Assets.xcassets in Resources */,
+				A54267FB1CE184B600B717B3 /* Main.storyboard in Resources */,
+				A57D73481CE461E7005CD908 /* MoneyAddViewController.xib in Resources */,
+				A54596921CE304F400F4C245 /* MoneyViewController.xib in Resources */,
+				A542682B1CE18C9300B717B3 /* MainCollectionViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A54268071CE184B600B717B3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A54268121CE184B600B717B3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		24F82FEA4E8C4EA2BFC537A1 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8E3623749AD6BA1CD4AE5C27 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B351DD7FAF1CF5E7CC6EEE56 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A54267EE1CE184B600B717B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A54596A01CE30B1C00F4C245 /* DbManager.swift in Sources */,
+				A54267FE1CE184B600B717B3 /* EasyMarks.xcdatamodeld in Sources */,
+				A545968E1CE2D41900F4C245 /* HomeCollectionFooterView.swift in Sources */,
+				A54267F81CE184B600B717B3 /* MainViewController.swift in Sources */,
+				A545969D1CE3087600F4C245 /* MoneyEntity+CoreDataProperties.swift in Sources */,
+				A50F2FA81CE9A1E100628BEB /* TableEmptyView.swift in Sources */,
+				A50F2FAA1CE9C2D400628BEB /* PayPassword.swift in Sources */,
+				A54596911CE304F400F4C245 /* MoneyViewController.swift in Sources */,
+				A542682E1CE18DB100B717B3 /* MainCellModel.swift in Sources */,
+				A57D73441CE459E0005CD908 /* UIBarButton.swift in Sources */,
+				A54596A91CE32DD500F4C245 /* MoneyDetail.swift in Sources */,
+				A50F2FAE1CE9C3B700628BEB /* GridKeyBoard.swift in Sources */,
+				A57D73471CE461E7005CD908 /* MoneyAddViewController.swift in Sources */,
+				A54596A61CE326A400F4C245 /* MoneyTableViewHead.swift in Sources */,
+				A545969E1CE3087600F4C245 /* MoneyEntity.swift in Sources */,
+				A545968B1CE2D0D500F4C245 /* ColorUtils.swift in Sources */,
+				A545AB821CE97331005948EF /* SwiftToast.swift in Sources */,
+				A54596AB1CE330AA00F4C245 /* MoneyDetailCell.swift in Sources */,
+				A54596A31CE3163500F4C245 /* SwiftUtils.swift in Sources */,
+				A54268291CE186A800B717B3 /* MainCollectionViewCell.swift in Sources */,
+				A54267F61CE184B600B717B3 /* AppDelegate.swift in Sources */,
+				A54268271CE184EA00B717B3 /* CommenViewController.swift in Sources */,
+				A54596891CE2CE2A00F4C245 /* Theme.swift in Sources */,
+				A55E8C351CE48A17000D4BDD /* PlaceholderTextView.swift in Sources */,
+				A50F2FAC1CE9C30D00628BEB /* GridInputView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A54268051CE184B600B717B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A542680E1CE184B600B717B3 /* EasyMarksTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A54268101CE184B600B717B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A54268191CE184B600B717B3 /* EasyMarksUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A542680B1CE184B600B717B3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A54267F11CE184B600B717B3 /* EasyMarks */;
+			targetProxy = A542680A1CE184B600B717B3 /* PBXContainerItemProxy */;
+		};
+		A54268161CE184B600B717B3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A54267F11CE184B600B717B3 /* EasyMarks */;
+			targetProxy = A54268151CE184B600B717B3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A54267F91CE184B600B717B3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A54267FA1CE184B600B717B3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A54268011CE184B600B717B3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A54268021CE184B600B717B3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A542681B1CE184B600B717B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A542681C1CE184B600B717B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A542681E1CE184B600B717B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67889A14C5D3BFA1ECF4F19B /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = EasyMarks/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wwh.EasyMarks;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "EasyMarks/EasyMarks-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A542681F1CE184B600B717B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC85BAA35F3DF74F1DF82B1F /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = EasyMarks/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wwh.EasyMarks;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "EasyMarks/EasyMarks-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		A54268211CE184B600B717B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = EasyMarksTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.boya.EasyMarksTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EasyMarks.app/EasyMarks";
+			};
+			name = Debug;
+		};
+		A54268221CE184B600B717B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = EasyMarksTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.boya.EasyMarksTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EasyMarks.app/EasyMarks";
+			};
+			name = Release;
+		};
+		A54268241CE184B600B717B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = EasyMarksUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.boya.EasyMarksUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = EasyMarks;
+			};
+			name = Debug;
+		};
+		A54268251CE184B600B717B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = EasyMarksUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.boya.EasyMarksUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = EasyMarks;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A54267ED1CE184B600B717B3 /* Build configuration list for PBXProject "EasyMarks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A542681B1CE184B600B717B3 /* Debug */,
+				A542681C1CE184B600B717B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A542681D1CE184B600B717B3 /* Build configuration list for PBXNativeTarget "EasyMarks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A542681E1CE184B600B717B3 /* Debug */,
+				A542681F1CE184B600B717B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A54268201CE184B600B717B3 /* Build configuration list for PBXNativeTarget "EasyMarksTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A54268211CE184B600B717B3 /* Debug */,
+				A54268221CE184B600B717B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A54268231CE184B600B717B3 /* Build configuration list for PBXNativeTarget "EasyMarksUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A54268241CE184B600B717B3 /* Debug */,
+				A54268251CE184B600B717B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A54267FC1CE184B600B717B3 /* EasyMarks.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A54267FD1CE184B600B717B3 /* EasyMarks.xcdatamodel */,
+			);
+			currentVersion = A54267FD1CE184B600B717B3 /* EasyMarks.xcdatamodel */;
+			path = EasyMarks.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A54267EA1CE184B600B717B3 /* Project object */;
+}

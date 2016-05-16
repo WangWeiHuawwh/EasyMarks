@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="maincell" id="iN0-l3-epB" customClass="MainCollectionViewCell" customModule="EasyMarks" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="292" height="292"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gUd-vR-qGg">
+                    <rect key="frame" x="0.0" y="0.0" width="292" height="292"/>
+                    <color key="backgroundColor" red="0.0" green="0.71372549019999998" blue="0.64705882349999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="gUd-vR-qGg" secondAttribute="height" multiplier="15:15" id="G2i-PU-RNA"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="er1-mv-Kz3">
+                    <rect key="frame" x="124" y="260" width="44" height="22"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="er1-mv-Kz3" firstAttribute="centerX" secondItem="gUd-vR-qGg" secondAttribute="centerX" id="1j8-dm-02Z"/>
+                <constraint firstItem="er1-mv-Kz3" firstAttribute="top" secondItem="gUd-vR-qGg" secondAttribute="bottom" constant="8" id="3tb-5O-bTK"/>
+                <constraint firstAttribute="bottom" secondItem="er1-mv-Kz3" secondAttribute="bottom" constant="202" id="Ck1-Sr-QNI"/>
+                <constraint firstItem="er1-mv-Kz3" firstAttribute="bottom" secondItem="gUd-vR-qGg" secondAttribute="bottom" constant="-10" id="IoU-zR-tqV"/>
+                <constraint firstItem="gUd-vR-qGg" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="kmt-ez-kWg"/>
+                <constraint firstItem="gUd-vR-qGg" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="xMq-cF-w8Z"/>
+                <constraint firstAttribute="trailing" secondItem="gUd-vR-qGg" secondAttribute="trailing" id="zMR-0p-lHu"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="3tb-5O-bTK"/>
+                    <exclude reference="Ck1-Sr-QNI"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="cellImageView" destination="gUd-vR-qGg" id="0S7-nu-dZC"/>
+                <outlet property="cellLabel" destination="er1-mv-Kz3" id="GZD-bB-jX1"/>
+            </connections>
+            <point key="canvasLocation" x="508" y="385"/>
+        </view>
+    </objects>
+</document>
